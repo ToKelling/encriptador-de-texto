@@ -1,0 +1,144 @@
+:root {
+    --azul: #0a3871;
+    --azul_claro: #d8dfe8;
+    --fuente:"Inter", sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: #f3f5fc;
+    font-family: var(--fuente);
+}
+main{
+    display: flex;
+    justify-content: space-around;
+}
+header{
+    margin-bottom: 5rem;
+    width: 62%;
+}
+header img{
+        width: 120px;
+        height: 48px;
+        
+}
+.form__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60dvh;
+    font-size: 32px;
+
+}
+.in__cuadro__texto{
+    width: 100%;
+    max-width: 577px;
+    height: 64dvh;
+    border-color: transparent;
+    outline: none;
+    background-color: transparent;
+    font-family: var(--fuente);
+    font-size: 3.2rem;
+    color: var(--azul);
+    margin-bottom: 3.2rem;
+    overflow: auto;
+    
+}
+.palabra{
+    align-items: center;
+}
+::placeholder{
+    color: var(--azul);
+}
+.contenedor__btn{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+.imagen__alerta{
+    width: 200px;
+        height: 30px;
+}
+
+.boton__enc{
+    background: var(--azul);
+    color: var(--azul_claro);
+    font-size: 1.6rem;
+    padding: 1rem, 2rem;
+    width: 328px;
+    border-radius: 24px;
+    height: 67px;
+    border: 1px solid var(--azul);
+    font-weight: 600;
+}
+.boton__des{
+    background: transparent;
+    color: var(--azul);
+    font-size: 1.6rem;
+    padding: 1rem, 2rem;
+    width: 328px;
+    border-radius: 24px;
+    height: 67px;
+    border: 1px solid var(--azul);
+    font-weight: 600;
+
+}
+
+
+.palabra{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    gap: 10rem;
+    height: 80dvh;
+    border-radius: 32px;
+    max-width: 40rem;
+    width: 100%;
+
+}
+.palabra__imagen{
+    display: block ;
+}
+.hidden{
+    display: none;
+}
+@media screen and (max-width:768px){
+    main{
+        flex-direction: column;
+        justify-content: center;
+    }
+    header img{
+        width: 60px;
+        height: 24px;
+        
+    }
+    .contenedor__btn{
+        justify-content: center;
+    }
+    .palabra__imagen{
+        display: none;
+    }
+    .palabra{
+        height: auto;
+        width: auto;
+        max-width: 624px;
+        padding: 1rem 2rem;
+        margin-top: 2rem;
+        min-height: 186px;
+        align-items: center;
+    }
+    .boton__enc:hover, .boton__des:hover{
+        margin: 0.3%;
+        width: 47.5%;
+        padding: 1.8%
+    
+    }
+    
+    
+
+
+}

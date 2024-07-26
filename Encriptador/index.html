@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="shortcut icon" href="recursos/imagenes/favi.png" type="image/x-icon"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+
+<body>
+    
+    <header>
+        <img src="recursos/imagenes/logoAlura.png">
+    </header>
+    <main>
+        <form class="form__container">
+            
+            <textarea class="in__cuadro__texto" name="texto" id="texto" cols="30" rows="10" placeholder="Ingrese el Texto aqui."></textarea>
+            <img src="recursos/imagenes/Frame 1.png" class="imagen__alerta">
+            <div class="contenedor__btn">
+                <button class= "boton__enc" type="button" onclick= "encriptar()">Encriptar</button>
+                <button class= "boton__des" type="button" onclick= "desencriptar()">Desencriptar</button>
+            </div>
+        </form>
+        <aside class="palabra">
+            <img src="recursos/imagenes/Muñeco.png" id="muneco" alt="muñeco buscando" class="palabra__imagen">
+            <div class="palabra__texto">
+                <h2 class="palabra__mensaje" name= "palabra__mensaje" id="palabra__mensaje">Ningun Mensaje fue Encontrado</h2>
+                <p class="palabra__parrafo">Ingresa el texto que deseas encriptar o desencriptar</p>
+                <button class="boton__des hidden">Copiar<r</button>
+            </div>
+        </aside>
+    </main>
+   
+    
+</body>
+<script src="jscript.js"></script>
+</html>
